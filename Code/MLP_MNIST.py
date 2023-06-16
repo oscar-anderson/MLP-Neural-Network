@@ -43,13 +43,13 @@ model = tf.keras.models.Sequential([
 ])
 
 # Configure learning with MSE loss function, gradient descent optimisation, and accuracy as metric.
-model.compile(loss='mse', optimizer='sgd', metrics=['accuracy'])
+model.compile(loss='mse', optimizer='sgd', metrics='accuracy')
 
 # Train model on training data.
 print('Training in progress...')
 model.fit(train_images, tf.keras.utils.to_categorical(train_labels), epochs=40)
         # 1) Pass training data.
-        # 2) Pass training data labels as binary array, to enable softmax probability distribution output.
+        # 2) Pass training data labels as 2D one-hot vector, to enable prediction evaluation and softmax probability distribution output.
         # 3) Pass number of epochs (iterations over training data). This can be adjusted to achieve highest accuracy.
 
 # Evaluate model on test data.
@@ -59,3 +59,4 @@ test_loss, test_acc = model.evaluate(test_images, tf.keras.utils.to_categorical(
 # Display network prediction accuracy, following testing.
 print('Test complete.')
 print("Test accuracy:", test_acc)
+
