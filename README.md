@@ -1,5 +1,5 @@
 # MNIST Multi-Layer Perceptron
-This script implements a Multi-Layer Perceptron (MLP) neural network for classifying images of handwritten digits from the MNIST dataset.
+This script implements a Multi-Layer Perceptron (MLP) for classifying images of handwritten digits from the MNIST dataset.
 
 The MNIST dataset (Modified National Institute of Standards and Technology dataset) is a popular dataset of images of handwritten digits. It has been referred to as the “Hello world” of deep learning datasets, and is commonly used for the testing of image-classification networks. The MNIST dataset comprises 70,000 images (60,000 training images and 10,000 testing images), each sized at 28x28 pixels.
 
